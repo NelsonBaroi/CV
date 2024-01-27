@@ -4,6 +4,7 @@ body {
   padding: 0;
   color: #333;
   background:linear-gradient(#FF7F50,#ffffff,#00bebe)
+  max-width: 100%;
 }
 
 .container {
