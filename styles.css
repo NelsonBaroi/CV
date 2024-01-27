@@ -5,12 +5,12 @@ body {
   color: #333;
   background:linear-gradient(#FF7F50,#ffffff,#00bebe)
    display: flex;
-  justify-content: space-between;
+
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
+  
   margin: 0 auto;
   padding: 20px;
   background-color: #00bebe;
@@ -24,7 +24,7 @@ header {
   text-align: center;
   padding: 0,5px 0;
    display: flex;
-  justify-content: space-between;
+  
 }
 
 #video-player {
@@ -33,7 +33,7 @@ header {
   align-items: center;
   padding: 10px 0;
    display: flex;
-  justify-content: space-between;
+  
 }
 
 .gradient-text {
@@ -57,7 +57,7 @@ header {
   gap: 10px;
   padding: 10px;
    display: flex;
-  justify-content: space-between;
+ 
 }
 
 .grid-item {
@@ -69,7 +69,7 @@ header {
   text-align: center;
   max-height: 30px;
    display: flex;
-  justify-content: space-between;
+ 
 }
 
 .grid-item img {
@@ -78,5 +78,5 @@ header {
   width: auto;
   height: auto;
    display: flex;
-  justify-content: space-between;
+ 
 }
