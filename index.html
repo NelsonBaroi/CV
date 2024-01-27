@@ -1,121 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>Document</title>
-      <link rel="stylesheet" href="style.css">
-      <script src="script.js"></script>
-  </head>
-  <body>
-      <section id="home">
-        <header>
-          Unit Conversions
-        </header>
-        <nav>
-          <div class="topdiv">
-            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
-            <a href="#weight"><button  class="topmenu">Weight</button></a>
-            <a href="#distance"><button  class="topmenu">Distance</button></a>
-          </div>
-        </nav>
-      </section>    
-      <div style="clear:both;"></div>
-     
-      <div id="all-conversion-sections">
 
-        <section id="temperature"  class="b temperature">
-          <div id="tmp">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
-              <figcaption>Celcius to Farenheit Conversion</figcaption>
-            </figure>
-            <article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelson Baroi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-              <fieldset>
-                <legend>Temperature</legend>
-                <label for="Temperature">Celsius</label> <br/>
+<body>
+  <header>
+    <h1 class="gradient-text">
+      NELSON BAROI</h1>
+    <div class="grid-container">
 
- <input type="number" id="celsius"> <br/>
-
-                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
-
-                <input type="number" id="fahrenheit"> <br/>
-
- <label for="Temperature">Fahrenheit</label>
-              </fieldset>
-              <aside>
-                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
-              </aside>
-            </article>
-          </div>
-        </section>
-
-        <div style="clear:both;"></div>
-      
-        <section id="weight"  class="b weight">          
-          <div id="wgt">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
-              <figcaption>Kilograms to Pound Conversion</figcaption>
-            </figure>
-            <article>
-              <fieldset>
-                <legend>Weight</legend>
-                <label for="Weight">KG</label> <br/>
-
- <input type="number" id="kilo"> <br/>
-
-                <button id="weight" onclick="weight()"> Convert </button>  <br/>
-
- 
-                <input type="number" id="pounds">  <br/>
-
-  <label for="Weight">Pounds</label>    
-              </fieldset>
-              <aside>
-                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
-              </aside>      
-            </article>
-          </div>
-        </section>
-
-        <div style="clear:both;"></div>
-
-        <section id="distance"  class="b distance">
-          <div id="dst">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
-              <figcaption>Kilometers to Miles Conversion</figcaption>
-            </figure>
-            <article>
-              <fieldset>
-                <legend>Distance</legend>
-                  <label for="Distance">KM</label> <br/>
-
- <input type="number" id="km">  <br/>
-
-                  <button id="distance" onclick="distance()"> Convert </button> <br/>
-
-                  <input type="number" id="miles">  <br/>
-
-  <label for="Distance">Miles</label>
-              </fieldset>
-              <aside>
-                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
-              </aside>
-    
-            </article>
-          </div>
-        </section>
-        <div style="clear:both;"></div>
-
-      </div>
-
-    <div id="go-home" class="iconbutton">
-      <a href="#home">
-        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      <a href="cv.html" style="text-decoration: none; color: inherit;">
+        <div class="grid-item">
+          CV
+        </div>
       </a>
-    </div>
+      
+      
+      <a href="documents.html" style="text-decoration: none; color: inherit;">
+        <div class="grid-item">
+          Documents
+        </div>
+      </a>
 
-    <footer>Learn more about HTML and CSS as a part of IBM Fullstack Cloud Developer Certification</footer>
-  </body>
+      <div class="grid-item">3</div>  
+      <div class="grid-item">4</div>
+    </div>
+  </header>
+
+
+  <!-- Video Player -->
+  <section id="video-player">
+    <div class="container">
+      <video width="720" height="480" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Rest of your HTML code -->
+
+  <div class="container">
+    <p>I am Nelson Baroi, a Bangladeshi born on August 1, 1995, currently residing at 5-22, AMT City,
+       Char Shahpur, Ishwardi, Pabna, Bangladesh.</p>
+      
+      <p>I consider myself open-minded and creative. 
+        I thrive on diverse perspectives and believe in the power of collaboration to drive innovation.
+         My values center around making a positive societal impact, and I approach life with a strategic, 
+         critical thinking mindset.</p>
+         
+         <p>
+          Currently, I find myself at a pivotal point in my academic and professional journey. With a Bachelor's degree 
+          in Business Informatics and a robust background as a Senior Administrator at AMT ENGINEERING JSC,
+           I've cultivated skills in project management, financial management, and colleague support.
+            My experiences have instilled in me a passion for problem-solving and a commitment to contribute meaningfully
+             to the world around me.
+         </p>
+  </div>
+ 
+    </head>
+
+    
+    
+    <div class="grid-container">
+      <div class="grid-item">
+          <a href="https://www.facebook.com/noel.baroi" target="_blank">
+              <img src="social/3D_Square_with_Facebook_Logo.jpg" alt="Facebook">
+          </a>
+      </div>
+  
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>  
+      <div class="grid-item">4</div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
 </html>
