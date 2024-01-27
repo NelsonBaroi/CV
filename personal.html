@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="pinContainer">
+        <br><br><br><br>
+        <label for="pinInput">Enter 4-Digit PIN:</label>
+        <input type="password" id="pinInput" maxlength="4">
+        <br>
+        <button onclick="checkPin()">Submit</button>
+    </div>
+
+    <div id="content" style="display:none;">
+        
+
+<iframe height="100%", width="100%">
+    
+
+</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        // Define the correct 4-digit PIN
+        const correctPin = "1107";
+
+        function checkPin() {
+            // Get the entered PIN from the input field
+            const enteredPin = document.getElementById("pinInput").value;
+
+            // Check if the entered PIN is correct
+            if (enteredPin === correctPin) {
+                // Display the protected content if the PIN is correct
+                document.getElementById("pinContainer").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                // Display an error message if the PIN is incorrect
+                alert("Incorrect PIN. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
