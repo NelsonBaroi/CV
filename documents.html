@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documents</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(124,238,206);
+        }
+
+        header {
+            background-color:rgb(124,238,206);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 20px;
+            padding: 100px;
+        
+
+        .file-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .file-item:hover {
+            background-color: rgb(124,238,206);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="gradient-text"><a href="index.html">Return to Home</a></h1>
+</header>
+
+<div id="file-grid">
+    <!-- File items will be dynamically added here -->
+</div>
+
+<script>
+    // Example file data (replace them with your actual file data)
+    const files = [
+       
+        { name: 'Bachelors degree(Russian)', type: 'pdf', url: 'documents/Bachelors degree.pdf' },
+        
+        { name: 'Bachelors degree(Translation)', type: 'pdf', url: 'documents/Bachelors degree_Translation.pdf' },
+        
+        { name: 'Transcript of grades', type: 'pdf', url: 'documents/transcript of grades.pdf' },
+        
+        { name: 'Transcript of grades(Translation)', type: 'pdf', url: 'documents/transcript of grades_Translation.pdf' },
+
+        { name: 'Grade conversion', type: 'pdf', url: 'documents/scholaro-gpa.pdf' },
+
+        { name: 'HSC and SSC Certificate', type: 'pdf', url: 'documents/HSC and SSC Certificate.pdf' },
+
+        { name: 'IELTS 2023-24 7.0 / C1', type: 'pdf', url: 'documents/IELTS 2023-24.pdf' },
+
+        { name: 'Recommendation of head of the depertment', type: 'pdf', url: 'documents/To whom it may concern.pdf' },
+
+        { name: 'Recommendation of dean of the faculty', type: 'pdf', url: 'documents/recommendation.pdf' },
+
+        // Add more file data as needed
+    ];
+
+    const fileGrid = document.getElementById('file-grid');
+
+    // Function to add file items to the grid
+    function addFileItems() {
+        files.forEach(file => {
+            const fileItem = document.createElement('div');
+            fileItem.classList.add('file-item');
+            fileItem.innerHTML = `
+                <p>${file.name}</p>
+                ${getFileEmbedCode(file)}
+            `;
+            fileItem.addEventListener('click', () => openFile(file.url));
+            fileGrid.appendChild(fileItem);
+        });
+    }
+
+    // Function to get the HTML embed code based on the file type
+    function getFileEmbedCode(file) {
+        if (file.type === 'img') {
+            return `<img src="${file.url}" alt="${file.name}" style="max-width: 100%; max-height: 500px;">`;
+        } else if (file.type === 'pdf') {
+            return `<embed src="${file.url}" type="application/pdf" width="100%" height="500px" />`;
+        } else if (file.type === 'doc') {
+            return `<iframe src="${file.url}" frameborder="0" width="100%" height="500px"></iframe>`;
+        } else {
+            return `<p>Unsupported file type</p>`;
+        }
+    }
+
+    // Function to open a file (replace with actual file opening logic)
+    function openFile(fileUrl) {
+        window.open(fileUrl, '_blank');
+    }
+
+    // Call the function to add file items on page load
+    addFileItems();
+</script>
+
+</body>
+</html>
